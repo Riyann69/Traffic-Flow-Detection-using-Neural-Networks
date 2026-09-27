@@ -9,7 +9,7 @@
   "mean_iou": 0.7633028262272399,
   "best_epoch": 19,
   "train_samples": 50000,
-  "train_minutes": 79.8,
+  "train_minutes": 55.9,
   "classical_control": {
     "accuracy": 0.86127904483913,
     "macro_f1": 0.8610180275873206
