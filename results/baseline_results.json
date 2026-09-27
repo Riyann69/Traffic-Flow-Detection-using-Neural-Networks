@@ -1,0 +1,22 @@
+{
+  "Majority class": {
+    "accuracy": 0.3363281056745659,
+    "macro_f1": 0.16778718951151128
+  },
+  "Persistence": {
+    "accuracy": 0.8728013324757994,
+    "macro_f1": 0.872144779988763
+  },
+  "15-min average": {
+    "accuracy": 0.8807912399610811,
+    "macro_f1": 0.8803580210132983
+  },
+  "Linear trend": {
+    "accuracy": 0.8066458879598938,
+    "macro_f1": 0.8042580732299568
+  },
+  "Logistic regression": {
+    "accuracy": 0.8724038984811755,
+    "macro_f1": 0.8717105426526867
+  }
+}
