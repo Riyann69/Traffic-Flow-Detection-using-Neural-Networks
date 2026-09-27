@@ -4,7 +4,7 @@ Five-minute-ahead congestion classification (Low / Medium / High) for individual
 **PeMS08** dataset. This project compares an **ANN**, a **1-D CNN** and a hybrid **Quantum Neural Network (QNN)**
 against simple baselines, evaluated on a strictly chronological, leakage-free split.
 
-📄 Paper: `Traffic Flow Detection Using Neural Networks.pdf`
+📄 Paper: [Traffic Flow Detection Using Neural Networks.pdf](Traffic%20Flow%20Detection%20Using%20Neural%20Networks.pdf)
 
 ---
 
