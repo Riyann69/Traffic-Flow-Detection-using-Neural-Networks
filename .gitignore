@@ -214,5 +214,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Large generated data (rebuilt by preprocess.ipynb)
+data/*.npz
+!data/pems08.npz
+~$*.docx
 # Streamlit
 .streamlit/secrets.toml
