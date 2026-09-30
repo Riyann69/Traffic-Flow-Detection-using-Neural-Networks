@@ -1,6 +1,6 @@
 # Traffic Flow Detection Using Neural Networks
 
-Five-minute-ahead congestion classification (Low / Medium / High) for individual freeway detectors in the
+Five-minute-ahead congestion classification (Low/Medium/High) for individual freeway detectors in the
 **PeMS08** dataset. This project compares an **ANN**, a **1-D CNN** and a hybrid **Quantum Neural Network (QNN)**
 against simple baselines, evaluated on a strictly chronological, leakage-free split.
 
