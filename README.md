@@ -4,6 +4,11 @@ Five-minute-ahead congestion classification (Low / Medium / High) for individual
 **PeMS08** dataset. This project compares an **ANN**, a **1-D CNN** and a hybrid **Quantum Neural Network (QNN)**
 against simple baselines, evaluated on a strictly chronological, leakage-free split.
 
+**Result:** the 1-D CNN reaches **89.2 %** test accuracy, about 1 point above the best rule (a 15-minute average, 88.1 %;
+McNemar p < 10⁻¹⁵⁰), and the 6-qubit QNN performs no better than a size-matched classical layer.
+
+![Test accuracy of every model](figures/accuracy_dotplot.png)
+
 📄 Paper: [Traffic Flow Detection Using Neural Networks.pdf](Traffic%20Flow%20Detection%20Using%20Neural%20Networks.pdf)
 
 ---
@@ -61,7 +66,8 @@ Run the notebooks in this order. Each one saves its outputs for the next.
 | 6   | `Models_comparison.ipynb` | Comparison tables, charts, per-detector analysis, McNemar tests                     | ~1 min     |
 
 
-Before running, set `PROJECT` at the top of each notebook to your own folder path.
+Start Jupyter from the repository root; every notebook uses paths relative to it, so nothing needs editing.
+The trained models and per-window predictions are committed, so `Models_comparison.ipynb` runs on its own in about a minute.
 
 ---
 
@@ -80,6 +86,7 @@ Before running, set `PROJECT` at the top of each notebook to your own folder pat
 │   └── pems08.npz                    # raw dataset
 ├── models/                           # saved models
 ├── results/                          # *_results.json, *_predictions.npz, baseline_results.json
+├── figures/                          # headline figure (written by Models_comparison.ipynb)
 ├── requirements.txt
 └── README.md
 ```
