@@ -67,7 +67,8 @@ Run the notebooks in this order. Each one saves its outputs for the next.
 
 
 Start Jupyter from the repository root; every notebook uses paths relative to it, so nothing needs editing.
-The trained models and per-window predictions are committed, so `Models_comparison.ipynb` runs on its own in about a minute.
+The trained models and per-window predictions are committed, so you can skip training: run `preprocess.ipynb` (~1 min,
+it creates `data/traffic_flow_preprocessed.npz`, which is not committed), then `Models_comparison.ipynb` (~1 min).
 
 ---
 
