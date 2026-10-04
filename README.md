@@ -45,6 +45,11 @@ McNemar p < 10⁻¹⁵⁰), and the 6-qubit QNN performs no better than a size-m
 
 - Traffic five minutes ahead is highly predictable from current conditions: a simple 15-minute average rule already reaches 88%.
 - The CNN and ANN beat the best rule by about 1 percentage point (McNemar p < 10⁻¹⁵⁰). They do so on 121 and 108 of the 170 detectors, respectively.
+- **The gain comes from the moments traffic changes.** Only 12.7 % of test windows switch class at the next step. On the
+  stable 87 %, the CNN and the rule are tied (96.1 % vs 96.0 %); on the changing windows, the CNN is right 41.5 % of the time
+  against the rule's 34.0 %, which accounts for 87 % of its overall gain. The edge is largest in the early-morning ramp-up (2–7 h).
+
+  ![Where the CNN beats the rule](figures/cnn_gain_breakdown.png)
 - The 6-qubit QNN performs on par with a size-matched classical layer (86.25% vs 86.13%). The quantum circuit shows no measurable advantage in this setting.
 
 ---
@@ -63,7 +68,7 @@ Run the notebooks in this order. Each one saves its outputs for the next.
 | 3   | `train_ann.ipynb`         | Multi-layer perceptron (72 → 128 → 64 → 32 → 3)                                     | ~5 min     |
 | 4   | `train_cnn.ipynb`         | 1-D CNN over the 24-step window                                                     | ~15 min    |
 | 5   | `train_qnn.ipynb`         | PCA (6 components) → 6-qubit PennyLane circuit → dense head, plus classical control | ~80 min    |
-| 6   | `Models_comparison.ipynb` | Comparison tables, charts, per-detector analysis, McNemar tests                     | ~1 min     |
+| 6   | `Models_comparison.ipynb` | Comparison tables, charts, per-detector analysis, McNemar tests, where the CNN wins | ~1 min     |
 
 
 Start Jupyter from the repository root; every notebook uses paths relative to it, so nothing needs editing.
