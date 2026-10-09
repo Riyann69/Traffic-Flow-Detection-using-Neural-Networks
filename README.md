@@ -23,8 +23,6 @@ McNemar p < 10⁻¹⁵⁰), and the 6-qubit QNN performs no better than a size-m
 
 ---
 
-
-
 ## Results (test set)
 
 
@@ -147,4 +145,4 @@ PeMS08 was collected by the Caltrans Performance Measurement System (PeMS) and r
 
 ## Author
 
-Riyan Wankhede, VIT-AP University
+Riyan Wankhede, VIT University
